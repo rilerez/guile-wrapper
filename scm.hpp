@@ -6,6 +6,7 @@
 #include <optional>
 #include <string>
 #include <tuple>
+#include <type_traits>
 
 #define FN(...) [&](auto _) { return __VA_ARGS__; }
 
