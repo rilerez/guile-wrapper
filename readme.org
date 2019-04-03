@@ -5,6 +5,6 @@
 ** subr.hpp
 *** a set of convenience templates and macros for defining scheme primitives without having to count the number of regular, optional, rest arguments yourself. Also provides wrappers to call these idiomatically from C++ and functions to bind them in the guile environment.
 ** with_guile
-   A wrapper on `scm_with_guile' that can take a C function object instead of just a function pointer
+   A wrapper on ~scm_with_guile~ that can take a C function object instead of just a function pointer
 ** list
    a variadic template to safely call the guile list-creating function
