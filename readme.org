@@ -1,0 +1,10 @@
+* A set of C++ convenience classes+templates for libguile
+** inspired by JeanHeyd Meneide's [[https://www.youtube.com/watch?v=ejvzoifkgAI][talk on sol3]]
+** scm.hpp
+*** a class which can cast between the SCM datatype and primitive C/C++ datatypes
+** subr.hpp
+*** a set of convenience templates and macros for defining scheme primitives without having to count the number of regular, optional, rest arguments yourself. Also provides wrappers to call these idiomatically from C++ and functions to bind them in the guile environment.
+** with_guile
+   A wrapper on `scm_with_guile` that can take a C function object instead of just a function pointer
+** list
+   a variadic template to safely call the guile list-creating function
